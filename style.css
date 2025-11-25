@@ -630,7 +630,7 @@ nav .menu.close .menu-link .text-item {
 
 img{
   border-radius: 15px;
-  max-width: 50%;
+  max-width: 30%;
 }
 
 .conteudo {
@@ -659,7 +659,7 @@ article h1 {
 
 article p {
   color: #030202;
-  font-size: 20px;
+  font-size: 19px;
 }
 article:hover {
   opacity: 1;

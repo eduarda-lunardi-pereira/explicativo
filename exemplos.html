@@ -50,14 +50,14 @@
  
  <article class="conteudo">
  <h1>EXEMPLOS</h1>
- <p>Para exemplificar tudo isso, vamos utilizar dois sistemas de <i lang="en">streaming</i>, o Spotify e a Netflix.</p>
- <p>Spotify: </p>
+ <p>Para exemplificar tudo isso, vamos utilizar dois sistemas de <i lang="en">streaming</i>, o Spotify e a Netflix, explicando o fluxo de reprodução (Spotify) e recomendação (Netiflix).</p>
+ <p>Spotify: o processo inicia com a ação do usuário no Front-End (aplicativo/site), que envia uma solicitação API ao servidor Back-end do Spotify (contendo ID da música e do usuário). Em seguida, ocorre a interação com o banco de dados, onde o servidor consulta um banco de dados relacional (MySQL) para validar a conta/assinatura e um banco de dados NoSQL (Cassandra) para registrar o evento de reprodução, obter o link do arquivo de áudio e confirmar que o usuário está ativo. Por fim, na resposta e renderização, o servidor envia o fluxo de dados da música (streaming) ao Front-end, que então gera a interface (capa, título, barra de progresso) e começa a reprodução.</p>
+ <p>Netflix: o processo inicia com a ação do usuário no front-End, que a abrir o aplicativo. o usuário dispara uma solicitação API ao servidor. Esse servidor acessa sistemas (como Cassandra e EVCache) para coletar o histórico, perfil e classificações do usuário. O sistema de recomendação processa esses dados para gerar uma lista de conteúdo personalizada. O servidor envia essa lista como metadados JSON de volta ao Front-end, que então gera a interface (fileiras e miniaturas) na tela inicial.</p>
  <div class="container-imagens">
   <img src="assets/spotify.png" alt="logo spotify">
   <img src="assets/netflix.png" alt="logo netiflix" width="150px">
 </div>
 </article>
- 
 
  
 

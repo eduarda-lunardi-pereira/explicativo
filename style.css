@@ -668,3 +668,21 @@ article:hover {
 a{
   color: #a41717;
 }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse; 
+}
+
+table, th, td {
+    padding: 10px; 
+    text-align: left; 
+    font-size: 1.2em; 
+}
+
+th {
+    background-color: #f2f2f2; 
+    text-align: center; 
+}

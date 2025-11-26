@@ -1,12 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Exemplos</title>
+    <title>Site sobre HTML, Banco de Dados e Mobile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display"> 
 </head>
 <body>
-    
+<!-- about -->
+<div class="about">
+    <a class="bg_links social portfolio" href="https://www.rafaelalucas.com" target="_blank">
+       <span class="icon"></span>
+    </a>
+    <a class="bg_links social dribbble" href="https://dribbble.com/rafaelalucas" target="_blank">
+       <span class="icon"></span>
+    </a>
+    <a class="bg_links social linkedin" href="https://www.linkedin.com/in/rafaelalucas/" target="_blank">
+       <span class="icon"></span>
+    </a>
+    <a class="bg_links logo"></a>
+ </div>
+
+ 
+ 
+ <nav>
+   <div class="menubar">
+     <a href="#0" class="home"></a>
+     <div class="icons">
+       
+       
+       <i class="icon-menu"><span></span></i>
+     </div>
+   </div>
+   <ul class="menu">
+      
+     <li class="menu-link"><a href="index.html" class="text-item">Início</a></li>
+     </li>
+     <li class="menu-link"><a href="sobrehtml.html" class="text-item">HTML</a>
+    </li>
+     <li class="menu-link"><a href="bancodedados.html" class="text-item">Banco de Dados</a></li>
+     <li class="menu-link"><a href="aplicativosmobiles.html" class="text-item">Aplicativos Mobiles</a></li>
+     <li class="menu-link"><a href="integracao.html" class="text-item">Integração em Sistemas Reais</a></li>
+     <li class="menu-link"><a href="exemplos.html" class="text-item">Exemplos</a></li>
+   </ul>
+ </nav>
+ 
+ <article class="conteudo">
+ <h1>EXEMPLOS</h1>
+ <p>Para exemplificar tudo isso, vamos utilizar dois sistemas de <i lang="en">streaming</i>, o Spotify e a Netflix, explicando o fluxo de reprodução (Spotify) e recomendação (Netiflix).</p>
+ <p>Spotify: o processo inicia com a ação do usuário no Front-End (aplicativo/site), que envia uma solicitação API ao servidor Back-end do Spotify (contendo ID da música e do usuário). Em seguida, ocorre a interação com o banco de dados, onde o servidor consulta um banco de dados relacional (MySQL) para validar a conta/assinatura e um banco de dados NoSQL (Cassandra) para registrar o evento de reprodução, obter o link do arquivo de áudio e confirmar que o usuário está ativo. Por fim, na resposta e renderização, o servidor envia o fluxo de dados da música (streaming) ao Front-end, que então gera a interface (capa, título, barra de progresso) e começa a reprodução.</p>
+ <p>Netflix: o processo inicia com a ação do usuário no front-End, que a abrir o aplicativo. o usuário dispara uma solicitação API ao servidor. Esse servidor acessa sistemas (como Cassandra e EVCache) para coletar o histórico, perfil e classificações do usuário. O sistema de recomendação processa esses dados para gerar uma lista de conteúdo personalizada. O servidor envia essa lista como metadados JSON de volta ao Front-end, que então gera a interface (fileiras e miniaturas) na tela inicial.</p>
+ <div class="container-imagens">
+  <img src="assets/spotify.png" alt="logo spotify">
+  <img src="assets/netflix.png" alt="logo netiflix" width="150px">
+</div>
+</article>
+
+ 
+
 </body>
+<script src="script.js"></script>
 </html>

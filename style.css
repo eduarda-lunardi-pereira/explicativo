@@ -651,7 +651,7 @@ iframe{
 }
 
 article h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 500;
   color: #c51250;
   font-family: 'Playfair Display';
@@ -659,7 +659,7 @@ article h1 {
 
 article p {
   color: #030202;
-  font-size: 17px;
+  font-size: 16px;
 }
 article:hover {
   opacity: 1;

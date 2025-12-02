@@ -6,4 +6,4 @@ Breve descrição: site que contém uma breve explicação sobre HTML, Banco de 
 
 Tecnologias utilizadas: HTML, CSS e JavaScript
 
-Link para o GitHub Pages: 
+Link para o GitHub Pages: https://eduarda-lunardi-pereira.github.io/explicativo/
